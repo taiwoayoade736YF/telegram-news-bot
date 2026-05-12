@@ -1,0 +1,20 @@
+          OPTION A
+          # Replace the html_content string with this:
+with open('my_page.html', 'r', encoding='utf-8') as f:
+    html_content = f.read()
+
+    OPTION B
+    import requests
+from bs4 import BeautifulSoup, Comment
+
+url = 'https://example.com'
+response = requests.get(url)
+response.raise_for_status()  # Stops if the page returns an error (4xx/5xx)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+# Continue with the exact same extraction logic from before...
+raw_text_nodes = soup.find_all(string=True)
+# ... rest of filtering code ...
+
+
+                  OPTION C

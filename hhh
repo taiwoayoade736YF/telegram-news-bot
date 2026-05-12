@@ -1,0 +1,181 @@
+>>> "I have %d apples" % 5
+'I have 5 apples'
+
+>>> "Age: %i" % 25
+'Age: 25' #interpolation
+
+>>> "Price: %f" % 19.99
+'Price: 19.990000'
+
+>>> "Price: %.2f" % 19.99   # .2 means 2 decimal places
+'Price: 19.99' # for float number
+
+>>> "First letter: %c" % 'A'
+'First letter: A'
+
+>>> "ASCII 65 is: %c" % 65
+'ASCII 65 is: A' # character formating
+
+REFERENCE CARD FOR INTERPOLATION
+
+%c  → Character (from int or string)
+%d  → Integer decimal
+%i  → Integer decimal (same as %d)
+%f  → Floating point decimal
+%r  → Raw representation (shows quotes, escapes)
+%s  → String (most versatile!)
+%%  → Literal percent sign
+
+>>> "%10.2f" % 3.14159
+'      3.14'
+10 = minimum 10 characters total
+.2 = 2 decimal places
+f = float
+[ ][ ][ ][ ][ ][ ][3][.][1][4]
+ 1   2   3   4   5   6  7  8  9  10
+ Order matters: %[flags][width].[precision]code
+
+ mystring = "swallow"
+"an african or European %s"
+'an african or European %s'
+"an african or European %s" %mystring
+'an african or European swallow'
+
+Formatting with multiple data items in a tuple
+# Modern Python 3 way (f-strings)
+print(f"{'x':2} {'x**2':5} {'x**x':12}")
+print("=" * 21)
+for x in range(1, 6):
+    print(f"{x:2} {x**2:5} {x**x:12}")
+
+
+    FORMATTING WITH A DICTIONARY
+    math_const = {'pi': 3.141592, 'e': 2.718282}
+
+# You can pick 'e' first, even though 'pi' was defined first in the dictionary
+print ("The value of e is approximately %(e)f" % math_const)
+
+
+Formatting with String Methods f-string 
+x = 'x'
+y = 'x**2'
+z = 'x**x'
+
+# >4 means "right align in 4 spaces" (same as .rjust(4))
+print(f"{x} {y:>4} {z:>6}")
+print("=" * 14)
+
+for n in range(1, 6):
+    # No need to convert to str() manually with f-strings
+    print(f"{n} {n**2:>4} {n**n:>6}")
+
+
+    UNICODE
+    # \u00e9 is the Unicode code for 'é'
+text = u'Libert\u00e9'  # Python 2
+text = 'Libert\u00e9'   # Python 3 (same thing)
+
+print(text)  # Output: Liberté
+
+
+LEARNING UNICODE AND ENCODING AND DECODING
+
+       [ Unicode String ]
+              │
+      .encode('utf-8') │  (Translate to bytes for storage)
+              ▼
+       [ Bytes: b'...' ]  <-- Saved to file / sent over network
+              │
+      .decode('utf-8') │  (Translate bytes back to Unicode)
+              ▼
+       [ Unicode String ]
+
+       ENCODING EXAMPLE
+       # Start with a Unicode string (normal text)
+text = "Liberté"
+
+# Encode it to UTF-8 bytes
+data = text.encode('utf-8')
+
+print(type(data))  # <class 'bytes'>
+print(data)        # b'Libert\xc3
+
+
+                DECODING EXAMPLE
+                # Start with raw bytes (e.g., read from a file)
+data = b'Libert\xc3\xa9'
+
+# Decode it back to Unicode
+text = data.decode('utf-8')
+
+print(type(text))  # <class 'str'>
+print(text)        # Liberté
+
+
+
+      PYTHON RAW REPRESENTATION OF DATA (ENCODING)
+      >>> q = y.encode('utf-8')
+>>> q
+'Libert\xc3\xa9, \xc3\xa9galit\xc3\xa9, fraternit\xc3\xa9'
+
+
+
+         ANOTHER EXAMPLE
+         
+         # Writing: Python automatically encodes your Unicode string to UTF-8
+with open('file.txt', 'w', encoding='utf-8') as f:
+    f.write("Liberté")  # Pass a normal string
+
+# Reading: Python automatically decodes UTF-8 bytes to Unicode
+with open('file.txt', 'r', encoding='utf-8') as f:
+    text = f.read()  # Get a normal string
+    print(text)      # Liberté
+
+              COMPLEX NUMBER
+              >>> x =(3+6j)
+>>> x.real  # For seperating the imaginary part
+3.0
+>>> x.imag # for adding the imaginary part
+6.0
+
+
+          ARGUMENTED ASSIGNMENT
+          EG x += 4
+          *=
+          /=
+          -=
+          //=
+
+          VIEWING AND CHANGING PARAMETERS
+          Summary Checklist
+Need standard math? Use import math.
+Need imaginary numbers? Use import cmath.
+Need money/accuracy? Use from decimal import Decimal.
+Using decimal? Always pass your numbers as strings (e.g., Decimal("10.50")), not floats.
+Need to round money? Use the .quantize() method.
+
+
+
+
+                  SLICING AND INDEX
+                  >>> numbers = [0, 1, 2, 3, 4, 5]
+
+>>> numbers[:3]             # Start defaults to 0
+[0, 1, 2]
+
+>>> numbers[3:]             # Stop defaults to end
+[3, 4, 5]
+
+>>> numbers[:]              # Both omitted → full copy
+[0, 1, 2, 3, 4, 5]
+
+>>> numbers[::2]            # Step only → every 2nd element
+[0, 2, 4]
+
+
+
+           LIST AND TUPLE
+           mylist = [8, 33, 29, 4, 1, 5, 98]
+>>> mylist.sort()
+>>> mylist
+[1, 4, 5, 8, 29, 33, 98]  #SORTING LIST

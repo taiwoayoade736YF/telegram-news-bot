@@ -1,0 +1,58 @@
+2026-04-27 18:21:26,411 - CRITICAL - Application failed to start: Layout Horizontal.Progress.TProgressbar not found
+Traceback (most recent call last):
+  File "C:\Users\USER\PycharmProjects\PythonProject\email2.py", line 1365, in main
+    app = EmailSorterGUI()
+  File "C:\Users\USER\PycharmProjects\PythonProject\email2.py", line 849, in __init__
+    self._setup_ui()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\PycharmProjects\PythonProject\email2.py", line 920, in _setup_ui
+    self.progress_bar = ttk.Progressbar(
+                        ~~~~~~~~~~~~~~~^
+        progress_frame,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        style='Progress.TProgressbar'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python314\Lib\tkinter\ttk.py", line 994, in __init__
+    Widget.__init__(self, master, "ttk::progressbar", kw)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python314\Lib\tkinter\ttk.py", line 536, in __init__
+    tkinter.Widget.__init__(self, master, widgetname, kw=kw)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python314\Lib\tkinter\__init__.py", line 2794, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Layout Horizontal.Progress.TProgressbar not found
+2026-04-27 18:38:31,512 - CRITICAL - Application failed to start: Layout Horizontal.Progress.TProgressbar not found
+Traceback (most recent call last):
+  File "C:\Users\USER\PycharmProjects\PythonProject\email2.py", line 1365, in main
+    app = EmailSorterGUI()
+  File "C:\Users\USER\PycharmProjects\PythonProject\email2.py", line 849, in __init__
+    self._setup_ui()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\USER\PycharmProjects\PythonProject\email2.py", line 920, in _setup_ui
+    self.progress_bar = ttk.Progressbar(
+                        ~~~~~~~~~~~~~~~^
+        progress_frame,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        style='Progress.TProgressbar'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python314\Lib\tkinter\ttk.py", line 994, in __init__
+    Widget.__init__(self, master, "ttk::progressbar", kw)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python314\Lib\tkinter\ttk.py", line 536, in __init__
+    tkinter.Widget.__init__(self, master, widgetname, kw=kw)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python314\Lib\tkinter\__init__.py", line 2794, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Layout Horizontal.Progress.TProgressbar not found

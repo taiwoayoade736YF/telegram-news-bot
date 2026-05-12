@@ -1,0 +1,48 @@
+import time
+
+while True:
+    # Your code here (e.g., scrape a website)
+    extract_and_save('https://fqluxury.org', 'output.txt')
+
+    # Pause for 30 seconds
+
+
+                How to Stop an Infinite Loop
+       -> Option 1: Keyboard Interrupt (Manual)
+       Press Ctrl+C in your terminal → raises KeyboardInterrupt → stops script
+
+       -> Option 2: Add a Break Condition
+       max_runs = 10
+count = 0
+
+while count < max_runs:  # Finite loop
+    extract_and_save('https://example.com', 'output.txt')
+    count += 1
+    time.sleep(30)
+
+print("🏁 Done with all runs!")
+
+->Option 3: Graceful Shutdown with Signal Handling
+import signal
+import sys
+
+running = True
+
+def stop_gracefully(signum, frame):
+    global running
+    print("\n🛑 Shutting down...")
+    running = False
+
+signal.signal(signal.SIGINT, stop_gracefully)  # Listen for Ctrl+C
+
+while running:
+    extract_and_save('https://example.com', 'output.txt')
+    time.sleep(30)
+
+print("✅ Clean exit.")
+sys.exit(0)
+
+
+
+               DIAGNOSIS FOR HASHIN ON TERMINALS
+               python3 -c "import hashlib; t='test'; print(f'Input: {t}\nHash: {hashlib.sha256(t.encode()).hexdigest()}')"

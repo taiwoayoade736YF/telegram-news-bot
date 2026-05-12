@@ -1,0 +1,21 @@
+john@gmail.com
+mary@outlook.com
+pyinstaller --onefile --icon=logo.ico email.py
+Press Win + R → type sysdm.cpl → Enter
+python -c "
+
+for cmd for scraping
+.venv\Scripts\activate.bat
+
+   to silence warning from grit
+git config --global core.autocrlf true
+
+
+
+
+
+ Genres in JSON: ['tech', 'sports', 'world']
+🔑 Genre types: ['str', 'str', 'str']
+  'tech': 2 articles
+  'sports': 1 articles
+  'world': 1 articles

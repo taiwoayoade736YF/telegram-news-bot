@@ -1,0 +1,364 @@
+{
+  "null": [
+    {
+      "title": "html",
+      "summary": "html GNews API: Simple News API for Developers Documentation Documentation Libraries & SDKs Pricing Sources Support Contact FAQ Sign in Register Documentation Libraries & SDKs Pricing Sources Contact ",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Simple News API for Developers",
+      "summary": "Simple News API for Developers",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Search articles from over 80,000 sources worldwide. Get real-time news and up to",
+      "summary": "Search articles from over 80,000 sources worldwide. Get real-time news and up to 6 years of historical data in JSON format. Start for free. Get API key",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Try GNews API",
+      "summary": "Try GNews API Search { \"totalArticles\": 0 , \"articles\": []\n}",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "* Search results are in English and US sources only. For other languages/regions",
+      "summary": "* Search results are in English and US sources only. For other languages/regions, see documentation at docs.gnews.io .",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Trusted by more than 100,000 developers, including at",
+      "summary": "Trusted by more than 100,000 developers, including at",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Easy-to-use",
+      "summary": "Easy-to-use",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Our comprehensive documentation provides clear, step-by-step guidance for seamle",
+      "summary": "Our comprehensive documentation provides clear, step-by-step guidance for seamless API integration into your applications.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Start for free",
+      "summary": "Start for free",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Build and test your applications at no cost during development. When you're read",
+      "summary": "Build and test your applications at no cost during development. When you're ready to deploy to production, you can activate your subscription in minutes.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Fast and accurate response",
+      "summary": "Fast and accurate response",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "By indexing news articles in our database, we achieve minimal latency and maximi",
+      "summary": "By indexing news articles in our database, we achieve minimal latency and maximize search result relevance.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "A powerful tool for all your projects",
+      "summary": "A powerful tool for all your projects",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Access a global news database with live updates and extensive historical archive",
+      "summary": "Access a global news database with live updates and extensive historical archives to fuel your specific business applications and use cases.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Worldwide scale",
+      "summary": "Worldwide scale",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Our database features over 100 million articles from over 80,000 trusted sources",
+      "summary": "Our database features over 100 million articles from over 80,000 trusted sources in 41 languages across 71 countries. Use our filters to search by language or source country for precise global media c",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "News articles data",
+      "summary": "News articles data",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "We use advanced extraction techniques to capture complete article attributes. Da",
+      "summary": "We use advanced extraction techniques to capture complete article attributes. Data quality is our highest priority, and we implement rigorous processes to maintain superior standards.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Historical data",
+      "summary": "Historical data",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Our database maintains a permanent archive of all indexed articles, providing ac",
+      "summary": "Our database maintains a permanent archive of all indexed articles, providing access to years of historical data. Our data coverage spans from 2020 to present.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Live news articles",
+      "summary": "Live news articles",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Our continuous crawling system automatically retrieves new articles from all cov",
+      "summary": "Our continuous crawling system automatically retrieves new articles from all covered sources. Articles are immediately indexed and made available through the API upon discovery.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Response performance",
+      "summary": "Response performance",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "API response time is a critical priority for us, and we continuously optimize ou",
+      "summary": "API response time is a critical priority for us, and we continuously optimize our infrastructure to ensure minimal latency for all requests.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Easy integration",
+      "summary": "Easy integration",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Retrieve API results in JSON format through standard HTTP GET requests from any ",
+      "summary": "Retrieve API results in JSON format through standard HTTP GET requests from any programming language. Integration is straightforward: send a request, receive results, parse the JSON response, and impl",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Libraries & SDKs",
+      "summary": "Libraries & SDKs",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Experience seamless API integration with our official libraries and SDKs, featur",
+      "summary": "Experience seamless API integration with our official libraries and SDKs, featuring comprehensive documentation and ready-to-use code examples. Discover the libraries",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Missing Sources?",
+      "summary": "Missing Sources?",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Help us expand our global news coverage. If you know of a reliable news website ",
+      "summary": "Help us expand our global news coverage. If you know of a reliable news website that isn't yet included in GNews API, we welcome your suggestions. Community contributions help us maintain a diverse, a",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Student Access",
+      "summary": "Student Access",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Are you a student working on a project or thesis? We offer free access to the GN",
+      "summary": "Are you a student working on a project or thesis? We offer free access to the GNews API for academic use. Submit your request and get started with real-world news data for your learning goals. Request",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Advanced Request Options",
+      "summary": "Advanced Request Options",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Design complex queries logically using search operators. Specify the context of ",
+      "summary": "Design complex queries logically using search operators. Specify the context of your query with many easy-to-use optional parameters.",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Search operators",
+      "summary": "Search operators",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Perform advanced searches using search operators such as AND, OR, and NOT to com",
+      "summary": "Perform advanced searches using search operators such as AND, OR, and NOT to combine, separate, and exclude keywords. Go to documentation",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Access full content",
+      "summary": "Access full content Full article content can be retrieved using a specific request parameter (subscription required). See pricing",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Choose the Right Plan That Fits Your Needs",
+      "summary": "Choose the Right Plan That Fits Your Needs Monthly Yearly Save 20%",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Free",
+      "summary": "Free €0 For development and testing purposes 100 requests per day Up to 10 articles returned per request 12-hour delay 30 days historical data CORS enabled for localhost Access to all sources Start fo",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Essential",
+      "summary": "Essential €49.99 /month For production and published commercial projects 1,000 requests per day Up to 25 articles returned per request Real-time article availability Historical data from 2020 CORS ena",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Business",
+      "summary": "Business €99.99 /month For larger projects that require more resources 5,000 requests per day Up to 50 articles returned per request Real-time article availability Historical data from 2020 CORS enabl",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Enterprise",
+      "summary": "Enterprise €249.99 /month For enterprise projects that require exceptional resources 25,000 requests per day Up to 100 articles returned per request Real-time article availability Historical data from",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Free",
+      "summary": "Free €0 For development and testing purposes 100 requests per day Up to 10 articles returned per request 12-hour delay 30 days historical data CORS enabled for localhost Access to all sources Start fo",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Essential",
+      "summary": "Essential €39.99 /month €479.99 billed annually For production and published commercial projects 1,000 requests per day Up to 25 articles returned per request Real-time article availability Historical",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Business",
+      "summary": "Business €79.99 /month €959.99 billed annually For larger projects that require more resources 5,000 requests per day Up to 50 articles returned per request Real-time article availability Historical d",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Enterprise",
+      "summary": "Enterprise €199.99 /month €2,399.99 billed annually For enterprise projects that require exceptional resources 25,000 requests per day Up to 100 articles returned per request Real-time article availab",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "We'll create a custom plan designed around your specific requirements. Starting ",
+      "summary": "We'll create a custom plan designed around your specific requirements. Starting with the Enterprise plan as a foundation, you can customize: Number of requests per day Number of articles returned per ",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Contact us directly with your specific requirements, and we'll analyze your need",
+      "summary": "Contact us directly with your specific requirements, and we'll analyze your needs and provide a detailed quote. Contact us now",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "FAQ",
+      "summary": "FAQ How can I test paid features before subscribing? You have access to a 10-day free trial to test all paid features. You can start your trial at gnews.io/change-plan and cancel anytime during the tr",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "No, the free subscription cannot be used for commercial projects. The free plan ",
+      "summary": "No, the free subscription cannot be used for commercial projects. The free plan is designed for non-commercial projects, development, and testing purposes only. If we detect abuse of these terms, your",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Once you reach your daily request limit, the API will return an Error 403 and no",
+      "summary": "Once you reach your daily request limit, the API will return an Error 403 and no additional data can be retrieved. Your request counter resets to zero daily at 00:00 UTC. Can I cancel my subscription ",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "), find the \"Subscription\" section, and click the \"Cancel subscription\" button t",
+      "summary": "), find the \"Subscription\" section, and click the \"Cancel subscription\" button to confirm your cancellation. If I change my plan, what will I pay?",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "When you change your subscription plan, your invoice is prorated based on usage.",
+      "summary": "When you change your subscription plan, your invoice is prorated based on usage. You'll pay for the days you used your previous plan this month, plus the remaining days with your new plan. You only pa",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "When a payment fails, Stripe automatically retries the payment 4 times over the ",
+      "summary": "When a payment fails, Stripe automatically retries the payment 4 times over the next two weeks. If all attempts fail, your subscription will be canceled and downgraded automatically. You'll receive em",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "or use the contact form on our main page. Custom plans are paid only and must in",
+      "summary": "or use the contact form on our main page. Custom plans are paid only and must include features beyond what the Essential plan offers. How far back does your historical news data go?",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Our historical news archive goes back to 2020. You can access and search through",
+      "summary": "Our historical news archive goes back to 2020. You can access and search through news articles, headlines, and content from 2020 onwards through our API and platform. I want to filter the results by s",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "for assistance. Our support team can help troubleshoot verification issues and e",
+      "summary": "for assistance. Our support team can help troubleshoot verification issues and ensure your account is properly activated. How do I contact support? You can reach our support team by emailing contact@g",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "You can request a refund within 7 days of your initial subscription or renewal, ",
+      "summary": "You can request a refund within 7 days of your initial subscription or renewal, but only if you haven't made any API calls. Send your request to contact@gnews.io with a brief explanation. Requests are",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Let's Connect",
+      "summary": "Let's Connect",
+      "url": "#",
+      "genre": null
+    },
+    {
+      "title": "Have questions, need support, or simply want to get in touch? Fill out the form ",
+      "summary": "Have questions, need support, or simply want to get in touch? Fill out the form below with your message and we'll get back to you soon. Tell us how we can help you Email address* Subject* Message* Sen",
+      "url": "#",
+      "genre": null
+    }
+  ]
+}

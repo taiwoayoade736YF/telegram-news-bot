@@ -1,0 +1,28 @@
+{
+  "tech": [
+    {
+      "title": "Major publishers sue Meta for copyright infringement over AI training",
+      "summary": "AI is powering transformative innovations, productivity and creativity for individuals and companies, and courts have rightly found that training AI on copyrighted material can qualify as fair use",
+      "url": "https://www.reuters.com/sustainability/boards-policy-regulation/major-publishers-sue-meta-copyright-infringement-over-ai-training-2026-05-05/"
+    },
+    {
+      "title": "Microsoft, Google and xAI to give US government early access to AI models for security checks",
+      "summary": "May 5 (Reuters) - Microsoft, Google and Elon Musk's xAI agreed to give the U.S. government early access to new artificial intelligence models for national security testing, as U.S. officials grow alarmed by the hacking capabilities of Anthropic's newly unveiled Mythos.",
+      "url": "https://www.reuters.com/legal/litigation/microsoft-xai-google-will-share-ai-models-with-us-govt-security-reviews-2026-05-05/"
+    }
+  ],
+  "sports": [
+    {
+      "title": "World Cup viewing in doubt for millions of fans in India and China",
+      "summary": "World Cup watched by millions of fans in India, China. India's Reliance-Disney joint venture made $20 mln offer. FIFA does not like offer from Indian group, sources say. No deal has been announced for China broadcasting.",
+      "url": "https://www.reuters.com/business/media-telecom/fifa-faces-world-cup-broadcast-crisis-indias-reliance-offers-20-mln-china-deal-2026-05-04/"
+    }
+  ],
+  "world": [
+    {
+      "title": "US says Iran ceasefire holds despite exchange of fire over Strait of Hormuz",
+      "summary": "US defense secretary says ceasefire is not over. Iran speaker warns 'we have not even begun yet'. Trump launches 'Project Freedom' in bid to open strait. UAE says it is facing missile and drone attacks for a second day. Iran expands claimed maritime control to include some UAE coastline.",
+      "url": "https://www.reuters.com/world/asia-pacific/middle-east-truce-doubt-us-iran-fight-control-strait-hormuz-2026-05-05/"
+    }
+  ]
+}

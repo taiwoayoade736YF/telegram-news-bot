@@ -1,0 +1,64 @@
+# 🔐 SECRETS - NEVER COMMIT
+.env
+*.key
+*token*
+*.pem
+*.secret
+
+# 📦 BUILD/OUTPUT FOLDERS
+dist/
+build/
+*.exe
+*.msi
+*.app
+
+# 🗂️ GENERATED DATA
+*.csv
+*.log
+output.*
+wordlist.txt
+*.json
+!PPY.json
+!news_data_bot.json
+!kb_data.json
+
+# 🖼️ MEDIA/SCRAPED FILES
+media_scrape/
+fqluxury_scrape/
+*.jpg
+*.png
+*.gif
+*.webp
+
+# 🐍 PYTHON
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 💻 IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# 🌐 WEB/ASSETS
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 🗑️ TEMP/SCRAP FILES
+*.tmp
+*.temp
+*.bak
+*.old
+Thumbs.db
+.DS_Store

@@ -1,0 +1,255 @@
+text,parent_tag
+html,[document]
+GNews API: Simple News API for Developers,title
+Documentation,button
+Documentation,a
+Libraries & SDKs,a
+Pricing,a
+Sources,a
+Support,button
+Contact,a
+FAQ,a
+Sign in,a
+Register,a
+Documentation,a
+Libraries & SDKs,a
+Pricing,a
+Sources,a
+Contact,a
+FAQ,a
+Sign in,a
+Register,a
+Simple News API for Developers,h1
+"Search articles from over 80,000 sources worldwide. Get real-time news and up to 6 years of historical data in JSON format. Start for free.",h2
+Get API key,a
+Try GNews API,h2
+Search,button
+{,pre
+"""totalArticles"":",span
+0,span
+",",pre
+"""articles"":",span
+"[]
+}",pre
+"* Search results are in English and US sources only. For other languages/regions, see documentation at",p
+docs.gnews.io,a
+.,p
+"Trusted by more than 100,000 developers, including at",h2
+Easy-to-use,h3
+"Our comprehensive documentation provides clear, step-by-step guidance for seamless API integration into your applications.",p
+Start for free,h3
+"Build and test your applications at no cost during development. When you're ready to deploy to production, you can activate your subscription in minutes.",p
+Fast and accurate response,h3
+"By indexing news articles in our database, we achieve minimal latency and maximize search result relevance.",p
+A powerful tool for all your projects,h2
+Access a global news database with live updates and extensive historical archives to fuel your specific business applications and use cases.,p
+Worldwide scale,h3
+"Our database features over 100 million articles from over 80,000 trusted sources in 41 languages across 71 countries. Use our filters to search by language or source country for precise global media coverage.",p
+News articles data,h3
+"We use advanced extraction techniques to capture complete article attributes. Data quality is our highest priority, and we implement rigorous processes to maintain superior standards.",p
+Historical data,h3
+"Our database maintains a permanent archive of all indexed articles, providing access to years of historical data. Our data coverage spans from 2020 to present.",p
+Live news articles,h3
+Our continuous crawling system automatically retrieves new articles from all covered sources. Articles are immediately indexed and made available through the API upon discovery.,p
+Response performance,h3
+"API response time is a critical priority for us, and we continuously optimize our infrastructure to ensure minimal latency for all requests.",p
+Easy integration,h3
+"Retrieve API results in JSON format through standard HTTP GET requests from any programming language. Integration is straightforward: send a request, receive results, parse the JSON response, and implement the data in your application.",p
+Having difficulties integrating the API?,p
+Contact us,a
+Libraries & SDKs,h3
+"Experience seamless API integration with our official libraries and SDKs, featuring comprehensive documentation and ready-to-use code examples.",p
+Discover the libraries,a
+Missing Sources?,h3
+"Help us expand our global news coverage. If you know of a reliable news website that isn't yet included in GNews API, we welcome your suggestions. Community contributions help us maintain a diverse, accurate, and up-to-date news database.",p
+Add missing sources,a
+Student Access,h3
+Are you a student working on a project or thesis? We offer free access to the GNews API for academic use. Submit your request and get started with real-world news data for your learning goals.,p
+Request access,a
+Advanced Request Options,h2
+Design complex queries logically using search operators. Specify the context of your query with many easy-to-use optional parameters.,p
+Search operators,h3
+"Perform advanced searches using search operators such as AND, OR, and NOT to combine, separate, and exclude keywords.",p
+Go to documentation,a
+Access full content,h3
+Full article content can be retrieved using a specific request parameter (subscription required).,p
+See pricing,a
+Choose the Right Plan That Fits Your Needs,h2
+Monthly,span
+Yearly,span
+Save 20%,span
+Free,h3
+€0,p
+For development and testing purposes,p
+100 requests per day,p
+Up to 10 articles returned per request,p
+12-hour delay,p
+30 days historical data,p
+CORS enabled for localhost,p
+Access to all sources,p
+Start for free,a
+Most Popular,div
+Essential,h3
+€49.99,span
+/month,span
+For production and published commercial projects,p
+"1,000 requests per day",p
+Up to 25 articles returned per request,p
+Real-time article availability,p
+Historical data from 2020,p
+CORS enabled for all origins,p
+Access to all sources,p
+Email support,p
+Full content,p
+Start 10-day free trial,a
+Business,h3
+€99.99,span
+/month,span
+For larger projects that require more resources,p
+"5,000 requests per day",p
+Up to 50 articles returned per request,p
+Real-time article availability,p
+Historical data from 2020,p
+CORS enabled for all origins,p
+Access to all sources,p
+Email support,p
+Full content,p
+Start 10-day free trial,a
+Enterprise,h3
+€249.99,span
+/month,span
+For enterprise projects that require exceptional resources,p
+"25,000 requests per day",p
+Up to 100 articles returned per request,p
+Real-time article availability,p
+Historical data from 2020,p
+CORS enabled for all origins,p
+Access to all sources,p
+Premium email support,p
+Full content,p
+Start 10-day free trial,a
+Free,h3
+€0,p
+For development and testing purposes,p
+100 requests per day,p
+Up to 10 articles returned per request,p
+12-hour delay,p
+30 days historical data,p
+CORS enabled for localhost,p
+Access to all sources,p
+Start for free,a
+Most Popular,div
+Essential,h3
+€39.99,span
+/month,span
+€479.99 billed annually,p
+For production and published commercial projects,p
+"1,000 requests per day",p
+Up to 25 articles returned per request,p
+Real-time article availability,p
+Historical data from 2020,p
+CORS enabled for all origins,p
+Access to all sources,p
+Email support,p
+Full content,p
+Start 10-day free trial,a
+Business,h3
+€79.99,span
+/month,span
+€959.99 billed annually,p
+For larger projects that require more resources,p
+"5,000 requests per day",p
+Up to 50 articles returned per request,p
+Real-time article availability,p
+Historical data from 2020,p
+CORS enabled for all origins,p
+Access to all sources,p
+Email support,p
+Full content,p
+Start 10-day free trial,a
+Enterprise,h3
+€199.99,span
+/month,span
+"€2,399.99 billed annually",p
+For enterprise projects that require exceptional resources,p
+"25,000 requests per day",p
+Up to 100 articles returned per request,p
+Real-time article availability,p
+Historical data from 2020,p
+CORS enabled for all origins,p
+Access to all sources,p
+Premium email support,p
+Full content,p
+Start 10-day free trial,a
+Missing something?,div
+Create Your Own Plan,div
+"We'll create a custom plan designed around your specific requirements. Starting with the Enterprise plan as a foundation, you can customize:",p
+Number of,p
+requests per day,span
+Number of,p
+articles returned per request,span
+Your support level,span
+Request additional features,span
+"Contact us directly with your specific requirements, and we'll analyze your needs and provide a detailed quote.",p
+Contact us now,a
+FAQ,h2
+How can I test paid features before subscribing?,button
+You have access to a 10-day free trial to test all paid features. You can start your trial at,div
+gnews.io/change-plan,a
+and cancel anytime during the trial period.,div
+Can I use the free plan if I want to use API in a commercial context?,button
+"No, the free subscription cannot be used for commercial projects. The free plan is designed for non-commercial projects, development, and testing purposes only. If we detect abuse of these terms, your account will be terminated.",div
+What happens when I reach the maximum number of requests for my plan?,button
+"Once you reach your daily request limit, the API will return an Error 403 and no additional data can be retrieved. Your request counter resets to zero daily at 00:00 UTC.",div
+Can I cancel my subscription at any time?,button
+"Yes, you can cancel your subscription anytime at no extra cost. Go to your ""Plan & Billing"" page (",div
+gnews.io/plan-billing,a
+"), find the ""Subscription"" section, and click the ""Cancel subscription"" button to confirm your cancellation.",div
+"If I change my plan, what will I pay?",button
+"When you change your subscription plan, your invoice is prorated based on usage. You'll pay for the days you used your previous plan this month, plus the remaining days with your new plan. You only pay for what you actually use with no additional fees.",div
+"If the payment of my last invoice fails, how long do I have until my subscription is downgraded?",button
+"When a payment fails, Stripe automatically retries the payment 4 times over the next two weeks. If all attempts fail, your subscription will be canceled and downgraded automatically. You'll receive email reminders throughout this two-week period.",div
+What if I need a personalized plan?,button
+"For custom plan requirements, contact us at",div
+contact@gnews.io,a
+or use the contact form on our main page. Custom plans are paid only and must include features beyond what the Essential plan offers.,div
+How far back does your historical news data go?,button
+"Our historical news archive goes back to 2020. You can access and search through news articles, headlines, and content from 2020 onwards through our API and platform.",div
+"I want to filter the results by source, is this possible?",button
+This feature is not currently available. Source filtering is not yet supported in our system.,div
+Why can't I verify my email address?,button
+"If you're unable to verify your email address, contact us at",div
+contact@gnews.io,a
+for assistance. Our support team can help troubleshoot verification issues and ensure your account is properly activated.,div
+How do I contact support?,button
+You can reach our support team by emailing,div
+contact@gnews.io,a
+.,div
+What is the refund policy?,button
+"You can request a refund within 7 days of your initial subscription or renewal, but only if you haven't made any API calls. Send your request to contact@gnews.io with a brief explanation. Requests are reviewed within 3-5 business days, and approved refunds typically appear in your account within 5-10 business days. Abusive requests may be denied. For full details, see our Terms of Service.",div
+Let's Connect,h2
+"Have questions, need support, or simply want to get in touch? Fill out the form below with your message and we'll get back to you soon.",h3
+Tell us how we can help you,h4
+Email address*,label
+Subject*,label
+Message*,label
+Send message,button
+Your message has been sent successfully. We'll get back to you soon.,p
+"Your message couldn't be sent at this time. Try again, or reach out directly to contact@gnews.io if the issue persists.",p
+Copyright © 2026 GNews API. All Rights Reserved.,p
+Navigation,li
+Documentation,a
+Pricing,a
+Libraries & SDKs,a
+Contact,a
+Resources,li
+FAQ,a
+Google News API,a
+Why Choose GNews API,a
+Get the Top Headlines,a
+Company,li
+Terms of Service,a
+Privacy Policy,a
+More APIs,li
+Recipe API,a
+Copyright © 2026 GNews API. All Rights Reserved.,p

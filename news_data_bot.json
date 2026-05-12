@@ -1,0 +1,41 @@
+{
+  "general": [
+    {
+      "title": "The map that keeps Burning Man honest",
+      "summary": "The map that keeps Burning Man honest",
+      "url": "https://www.not-ship.com/burning-man-moop/",
+      "image": null,
+      "source": "Hacker News"
+    },
+    {
+      "title": "Child marriages plunged when girls stayed in school in Nigeria",
+      "summary": "Child marriages plunged when girls stayed in school in Nigeria",
+      "url": "https://www.nature.com/articles/d41586-026-00796-2",
+      "image": null,
+      "source": "Hacker News"
+    },
+    {
+      "title": "The Self-Cancelling Subscription",
+      "summary": "The Self-Cancelling Subscription",
+      "url": "https://predr.ag/blog/the-self-cancelling-subscription/",
+      "image": null,
+      "source": "Hacker News"
+    },
+    {
+      "title": "Authorities say Flock cameras' data allegedly used for immigration enforcement",
+      "summary": "Authorities say Flock cameras' data allegedly used for immigration enforcement",
+      "url": "https://www.ohio.news/stories/dayton-authorities-say-that-flock-cameras-data-allegedly-used-for-immigration-enforcement/",
+      "image": null,
+      "source": "Hacker News"
+    }
+  ],
+  "tech": [
+    {
+      "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+      "summary": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+      "url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "image": null,
+      "source": "Hacker News"
+    }
+  ]
+}
