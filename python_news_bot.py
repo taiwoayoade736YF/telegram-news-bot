@@ -340,7 +340,7 @@ def main():
         app.run_polling(
             poll_interval=2,
             timeout=timeout,
-            allowed_updates=Update.ALL_TYPES
+            allowed_updates=None
         )
 
     except Exception as e:  # ← ✅ EXCEPT MATCHES THE TRY ABOVE
