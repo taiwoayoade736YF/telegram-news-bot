@@ -7,12 +7,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# 🔐 TOKEN SETUP
-from dotenv import load_dotenv
-import os
-from telegram.request import HTTPXRequest
-from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
-# ... rest of your imports ...
+
 
 
 import asyncio
@@ -275,7 +270,7 @@ def main():
         from dotenv import load_dotenv
         import os
         from telegram.request import HTTPXRequest
-        from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Update, ContextTypes
+        from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
         load_dotenv()
         TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
