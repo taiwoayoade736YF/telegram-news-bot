@@ -15,6 +15,13 @@ from telegram.request import HTTPXRequest
 # ✅ Import your scraper function from PPY.py
 from PPY import scrape_hackernews
 
+import sys
+import os
+
+# Render runs in headless mode - ensure Playwright works
+if os.getenv("RENDER"):
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "/opt/render/.cache/ms-playwright"
+
 # 📝 Configure logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -249,55 +256,100 @@ def get_clickable_commands_keyboard() -> ReplyKeyboardMarkup:
 
 
 def main():
-    # 🔐 TOKEN SETUP - Copy this EXACTLY
-    TOKEN = "8641134115:AAF09GeiU0xzIFjhDlMHYWzLhUEGZK1VyzU"
+    import traceback  # ← For error logging
 
-    # Simple validation
-    if not TOKEN or len(TOKEN) < 40 or ":" not in TOKEN:
-        print(f"❌ Invalid token: '{TOKEN}'")
-        raise ValueError("⚠️ Bot token is invalid! Check for typos or extra spaces.")
+    try:  # ← ✅ START OF TRY BLOCK
+        # 🔐 TOKEN SETUP
+        from dotenv import load_dotenv
+        import os
+        from telegram.request import HTTPXRequest
+        from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Update, ContextTypes
 
-    logger.info(f"🔐 Bot token loaded (length: {len(TOKEN)}, ends with ...{TOKEN[-6:]})")
+        load_dotenv()
+        TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
-    # Create bot application
-    request = HTTPXRequest(
-        connect_timeout=30.0,  # Wait up to 30s to connect to Telegram
-        read_timeout=60.0,  # Wait up to 60s for responses
-        write_timeout=60.0,  # Wait up to 60s to send messages
-        pool_timeout=30.0
-    )
-    app = Application.builder().token(TOKEN).request(request).build()
+        # Simple validation
+        if not TOKEN or len(TOKEN) < 40 or ":" not in TOKEN:
+            print(f"❌ Invalid token: '{TOKEN}'")
+            raise ValueError("⚠️ Bot token is invalid! Check for typos or extra spaces.")
 
-    # Register handlers
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("news", news_command))
-    app.add_handler(CommandHandler("help", help_command))
-    app.add_handler(CommandHandler("latestnews", latestnews_command))
-    from telegram.ext import MessageHandler, filters
-    app.add_handler(MessageHandler(filters.TEXT & filters.COMMAND, handle_command_button))
+        logger.info(f"🔐 Bot token loaded (length: {len(TOKEN)}, ends with ...{TOKEN[-6:]})")
 
-    # Register dynamic genre commands
-    for genre in NEWS_DATABASE.keys():
-        cmd_name = safe_command_name(genre)
-        app.add_handler(CommandHandler(
-            cmd_name,
-            lambda update, context, g=genre: send_genre_news(update, context, g)
-        ))
+        # ⚙️ Dynamic timeout
+        timeout = 120 if os.getenv("RENDER") else 60
 
-    # Handle button clicks
-    app.add_handler(CallbackQueryHandler(show_news_by_callback))
+        # 🌐 Configure HTTP request
+        request = HTTPXRequest(
+            connect_timeout=30.0,
+            read_timeout=timeout,
+            write_timeout=timeout,
+            pool_timeout=30.0
+        )
 
-    # Error handler
-    async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        logger.error(f"❌ Update {update} caused error: {context.error}")
+        # 🤖 Create Application
+        app = Application.builder().token(TOKEN).request(request).build()
 
-    app.add_error_handler(error_handler)
+        # ✅ Register handlers
+        app.add_handler(CommandHandler("start", start))
+        app.add_handler(CommandHandler("news", news_command))
+        app.add_handler(CommandHandler("help", help_command))
+        app.add_handler(CommandHandler("latestnews", latestnews_command))
 
-    # Start bot
-    logger.info("✅ Bot is running. Press Ctrl+C to stop.")
-    logger.info(f"📊 Available genres: {list(NEWS_DATABASE.keys())}")
-    app.run_polling(poll_interval=2, timeout=60, allowed_updates=Update.ALL_TYPES)
+        # 🚀 Genre commands
+        for genre in NEWS_DATABASE.keys():
+            cmd_name = safe_command_name(genre)
+            app.add_handler(CommandHandler(
+                cmd_name,
+                lambda update, context, g=genre: send_genre_news(update, context, g)
+            ))
 
+        # ✅ Inline button handler
+        app.add_handler(CallbackQueryHandler(show_news_by_callback))
+
+        # 🛡️ Error handler
+        async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+            logger.error(f"❌ Update {update} caused error: {context.error}")
+
+        app.add_error_handler(error_handler)
+
+        # 🔄 Auto-refresh for Render
+        if os.getenv("RENDER"):
+            async def auto_refresh(context: ContextTypes.DEFAULT_TYPE):
+                logger.info("🔄 Auto-refreshing news...")
+                try:
+                    from PPY import scrape_hackernews
+                    fresh = scrape_hackernews(max_articles=10)
+                    from collections import defaultdict
+                    import json
+                    from pathlib import Path
+                    fresh_db = defaultdict(list)
+                    for a in fresh:
+                        genre = a.pop('genre', 'general')
+                        fresh_db[genre].append(a)
+                    with open(Path(__file__).parent / "PPY.json", "w", encoding="utf-8") as f:
+                        json.dump(dict(fresh_db), f, ensure_ascii=False, indent=2)
+                    logger.info(f"✅ Auto-refreshed {len(fresh)} articles")
+                except Exception as e:
+                    logger.error(f"❌ Auto-refresh failed: {e}")
+
+            app.job_queue.run_repeating(auto_refresh, interval=3600, first=300)
+
+        # 🚀 Start polling (CORRECT INDENTATION)
+        logger.info("✅ Bot is running. Press Ctrl+C to stop.")
+        logger.info(f"📊 Available genres: {list(NEWS_DATABASE.keys())}")
+        app.run_polling(
+            poll_interval=2,
+            timeout=timeout,
+            allowed_updates=Update.ALL_TYPES
+        )
+
+    except Exception as e:  # ← ✅ EXCEPT MATCHES THE TRY ABOVE
+        # 🔴 CATCH AND PRINT ALL ERRORS
+        print(f"\n❌ CRASH: {type(e).__name__}: {e}")
+        print("🔍 Full traceback:")
+        traceback.print_exc()
+        print("\n")
+        raise  # Re-raise so Render sees it failed
 
 from telegram import ReplyKeyboardMarkup, KeyboardButton
 
