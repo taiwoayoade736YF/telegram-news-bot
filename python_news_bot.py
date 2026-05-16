@@ -1,4 +1,20 @@
 # new_bot.py - Complete working bot with /latestnews command
+# 🔧 LOGGING SETUP
+import logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# 🔐 TOKEN SETUP
+from dotenv import load_dotenv
+import os
+from telegram.request import HTTPXRequest
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
+# ... rest of your imports ...
+
+
 import asyncio
 import json
 import logging
