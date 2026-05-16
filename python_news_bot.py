@@ -1,22 +1,18 @@
 # new_bot.py - Complete working bot with /latestnews command
+import asyncio
 import json
 import logging
 import os
 import re
-import asyncio
-from pathlib import Path
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
-from telegram.request import HTTPXRequest
+from telegram.ext import ContextTypes
 
 # ✅ Import your scraper function from PPY.py
 from PPY import scrape_hackernews
-
-import sys
-import os
 
 # Render runs in headless mode - ensure Playwright works
 if os.getenv("RENDER"):
@@ -349,9 +345,7 @@ def main():
         print("🔍 Full traceback:")
         traceback.print_exc()
         print("\n")
-        raise  # Re-raise so Render sees it failed
-
-from telegram import ReplyKeyboardMarkup, KeyboardButton
+        raise  # Re-raise
 
 def get_command_keyboard() -> ReplyKeyboardMarkup:
     """Creates a clickable keyboard with all bot commands"""
