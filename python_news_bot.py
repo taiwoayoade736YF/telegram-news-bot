@@ -320,26 +320,27 @@ def main():
         app.add_error_handler(error_handler)
 
         # 🔄 Auto-refresh for Render
-        if os.getenv("RENDER"):
-            async def auto_refresh(context: ContextTypes.DEFAULT_TYPE):
-                logger.info("🔄 Auto-refreshing news...")
-                try:
-                    from PPY import scrape_hackernews
-                    fresh = scrape_hackernews(max_articles=10)
-                    from collections import defaultdict
-                    import json
-                    from pathlib import Path
-                    fresh_db = defaultdict(list)
-                    for a in fresh:
-                        genre = a.pop('genre', 'general')
-                        fresh_db[genre].append(a)
-                    with open(Path(__file__).parent / "PPY.json", "w", encoding="utf-8") as f:
-                        json.dump(dict(fresh_db), f, ensure_ascii=False, indent=2)
-                    logger.info(f"✅ Auto-refreshed {len(fresh)} articles")
-                except Exception as e:
-                    logger.error(f"❌ Auto-refresh failed: {e}")
-
-            app.job_queue.run_repeating(auto_refresh, interval=3600, first=300)
+        # # 🔄 Auto-refresh for Render
+        # if os.getenv("RENDER"):
+        #     async def auto_refresh(context: ContextTypes.DEFAULT_TYPE):
+        #         logger.info("🔄 Auto-refreshing news...")
+        #         try:
+        #             from PPY import scrape_hackernews
+        #             fresh = scrape_hackernews(max_articles=10)
+        #             from collections import defaultdict
+        #             import json
+        #             from pathlib import Path
+        #             fresh_db = defaultdict(list)
+        #             for a in fresh:
+        #                 genre = a.pop('genre', 'general')
+        #                 fresh_db[genre].append(a)
+        #             with open(Path(__file__).parent / "PPY.json", "w", encoding="utf-8") as f:
+        #                 json.dump(dict(fresh_db), f, ensure_ascii=False, indent=2)
+        #             logger.info(f"✅ Auto-refreshed {len(fresh)} articles")
+        #         except Exception as e:
+        #             logger.error(f"❌ Auto-refresh failed: {e}")
+        #
+        #     app.job_queue.run_repeating(auto_refresh, interval=3600, first=300)
 
         # 🚀 Start polling (CORRECT INDENTATION)
         logger.info("✅ Bot is running. Press Ctrl+C to stop.")
