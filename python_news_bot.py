@@ -199,7 +199,26 @@ async def latestnews_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
             await status_msg.edit_text("⏱️ Scraping timed out. The site might be slow. Try again in a minute.")
         except Exception as e:
             logger.error(f"❌ Error in /latestnews: {e}")
-            await status_msg.edit_text(f"⚠️ Error scraping news: {str(e)[:150]}")
+
+            # 🔴 FRIENDLY FALLBACK for Playwright/browser errors
+            error_msg = str(e).lower()
+            if any(keyword in error_msg for keyword in [
+                'executable doesn\'t exist',
+                'browserType.launch',
+                'playwright',
+                'chromium',
+                'read-only file system',
+                'permission denied'
+            ]):
+                await status_msg.edit_text(
+                    "⚠️ Live scraping is temporarily unavailable on this server.\n\n"
+                    "✅ You can still browse cached news:\n"
+                    "• /tech • /general • /entertainment\n\n"
+                    "🔄 Try /latestnews again later!"
+                )
+            else:
+                # Show other errors normally (timeout, network, etc.)
+                await status_msg.edit_text(f"⚠️ Error scraping news: {str(e)[:150]}")
 
 
 
