@@ -395,3 +395,29 @@ def get_command_keyboard() -> ReplyKeyboardMarkup:
 
 if __name__ == "__main__":
     main()
+
+# 🌐 Minimal HTTP server for Render health checks (required for Web Service)
+import threading
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+class HealthHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == "/health":
+            self.send_response(200)
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
+            self.wfile.write(b"OK")
+        else:
+            self.send_response(404)
+            self.end_headers()
+    def log_message(self, format, *args):
+        pass  # Silence HTTP logs
+
+def start_health_server():
+    server = HTTPServer(("0.0.0.0", 8080), HealthHandler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+
+# Start health server BEFORE bot polling
+if __name__ == "__main__":
+    start_health_server()  # ✅ Satisfies Render's port check
+    main()  # ✅ Your bot runs as normal
