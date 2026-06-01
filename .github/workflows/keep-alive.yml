@@ -1,0 +1,15 @@
+name: Keep Bot Alive
+
+on:
+  schedule:
+    # Run every 10 minutes
+    - cron: '*/10 * * * *'
+  workflow_dispatch:  # Lets you test manually
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping bot health endpoint
+        run: |
+          curl -f https://telegram-news-bot.onrender.com/health || echo "Ping failed (but that's okay)"
